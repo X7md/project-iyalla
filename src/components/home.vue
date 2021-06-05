@@ -4,7 +4,7 @@
     <h1 class="title">يلا</h1>
       <div class="paragraph">
         <p class="font-dubai-light fs-4">
-          سافر في منصتنا، قبل لا تسافر بالجو!
+          منصتك للسياحة و الترفيه...
         </p>
       </div>
     <BarSearch />

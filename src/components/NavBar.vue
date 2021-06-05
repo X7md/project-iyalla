@@ -42,7 +42,8 @@ import LogoYalla from '../assets/logoYalla.png'
   overflow-y: hidden;
 }
 .scroller > section a:first-child {
-    margin-right: 25px;
+    margin-right: 35px;
+    padding-right: 10px;
 }
 .scroller > section a:last-child {
     margin-right: 0%;
