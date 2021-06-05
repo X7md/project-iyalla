@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex align-items-center flex-column" data-avatar>
+    <div class="d-flex w-100 align-items-center flex-column" data-avatar>
         <img class="avatar" :src="ImageSrc">
         <span v-text="xtitle"></span>
     </div>
@@ -7,7 +7,7 @@
 <script>
 import { reactive } from 'vue'
 export default {
-    props: {
+props: {
     ImageSrc: {
         type: String,
         required: true
@@ -16,25 +16,27 @@ export default {
         type: String,
         required: true
     }
-    },
+},
     setup(props) {
-    console.log(props) // { user: '' }
-
-    return {} // anything returned here will be available for the rest of the component
+    console.log(props)
   }
 }
 </script>
 <style scoped>
     * {
-        font-family: Dubai-Light;
+    font-family: Dubai-Light;
     }
     .avatar{
-    height: 5rem;
-    max-width: 5rem;
+    height: 4rem;
+    width: 4rem;
     object-fit: cover;
     border-radius: 50%;
     }
     [data-avatar] {
-        color: #ffffff;
+    text-align: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    transition: all .2s ease-in-out; 
+    color: #ffffff;
     }
 </style>
