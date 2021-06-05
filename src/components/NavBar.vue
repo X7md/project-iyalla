@@ -24,11 +24,11 @@
 
 <script setup>
 import Avatar from './Avatar.vue';
-import logo1 from '../assets/logos/A.png'
-import logo2 from '../assets/logos/B.png'
-import logo3 from '../assets/logos/c.png'
-import logo4 from '../assets/logos/E.png'
-import logo5 from '../assets/logos/d.png'
+import logo1 from '../assets/logos/A.jpg'
+import logo2 from '../assets/logos/B.jpg'
+import logo3 from '../assets/logos/c.jpg'
+import logo4 from '../assets/logos/E.jpg'
+import logo5 from '../assets/logos/d.jpg'
 import LogoYalla from '../assets/logoYalla.png'
 //const counter = ref({})
 </script>

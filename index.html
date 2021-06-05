@@ -5,6 +5,11 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>يلا...</title>
+    <script defer>
+      window.addEventListener("DOMContentLoaded", function(){
+        document.getElementById("app").style.setProperty("--url", `url("https://lh3.googleusercontent.com/d/1co11BCx4FCTI3Qo_ZIHETCy1F9R6eFGm=w${parseInt(window.innerWidth * 3.2) > 2000 ? "0" : parseInt(window.innerWidth * 3.2)}")`)
+      })
+    </script>
   </head>
   <body>
     <div id="app"></div>

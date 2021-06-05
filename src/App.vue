@@ -30,7 +30,7 @@ html, body, #app {
 #app {
     font-family: Dubai-Bold;
     color: #ffffff;
-    background-image: url("./assets/kemo-sahab-4V0tz5FEvTc-unsplash.jpg");
+    background-image: var(--url);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
