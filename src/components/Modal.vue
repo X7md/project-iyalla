@@ -1,19 +1,27 @@
 <template>
-<div class="v-overlay" ref="overlay" @click="close()"/>
-    <div class="v-modal" ref="modal">
+<div class="v-overlay" @click="close()"/>
+    <div v-if="dataShow" class="v-modal">
         <div class="container-fluid"><div class="row">
             <div class="col-12 name py-2">
-                <img class="avatar-img" src="http://localhost:3000/src/assets/logos/E.png">
+                <img class="avatar-img" src="http://localhost:3000/src/assets/logos/E.jpg">
                     <div class="name m-auto px-2 d-inline-flex flex-column">
-                        <p class="v-info-title">Hello</p>
-                        <p class="v-info-text font-dubai-light">تست</p>
+                        <p class="font-dubai-bold fs-5 v-info-title" v-text="dataShow.title"></p>
                     </div>
                 </div>
             <div class="col-12 social-media">
                  <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item ">
+                        <div class="name m-auto d-inline-flex flex-row social-media-icons">
+                            <a href="https://tiktok.com/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="--fa-brands" width="28" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z" fill="currentColor"></path></svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="list-group-item paragraph">
+                        <p class="font-dubai-light v-info-text" v-text="dataShow.desc">
+
+                        </p>
+                    </li>
                 </ul>
             </div>
             </div>
@@ -22,22 +30,15 @@
 </template>
 
 <script>
-import { reactive } from 'vue'
 export default {
 props:["dataShow"],
-watch: { 
-      	dataShow: function(newVal, oldVal) { // watch it
-          console.log('Prop changed: ', newVal, ' | was: ', oldVal)
-        }
-      },
+emits:["closeModal"],
 methods: {
     close: function() {
-     this.$refs.overlay.classList.add("close");
-     this.$refs.modal.classList.add("close");
+        this.$emit("closeModal", true)
     }
 }
 }
-
 </script>
 
 <style>
@@ -48,6 +49,12 @@ methods: {
     /* border-color: transparent; */
     border-right: 0;
     border-left: 0;
+}
+.social-media-icons svg {
+    max-height: 16px;
+}
+.social-media-icons a {
+    color: inherit;
 }
 p.name {
     display: inline-block;

@@ -42,10 +42,4 @@ a {
     transform: scale(1.1);
     cursor: pointer;
   }
-  .hero {
-    min-height: 35vw
-  }
-  .hero h1.title {
-    font-size: xxx-large;
-  }
 </style>

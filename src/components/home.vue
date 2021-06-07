@@ -9,19 +9,20 @@
       </div>
     <BarSearch />
  <div>
-    <!--<teleport to="[data-outside]">
-       <ModalComponet dataShow='{"Hi", "Hello"}'/>
-    </teleport>-->
  </div>
   </div>
 </template>
 
 <script setup>
 import Nav from './NavBar.vue'
-import ModalComponet from './Modal.vue'
 import BarSearch from './SearchBar.vue'
 </script>
 
-<style>
-
+<style scoped>
+  .hero {
+    min-height: 35vw
+  }
+  .hero h1.title {
+    font-size: xxx-large;
+  }
 </style>
