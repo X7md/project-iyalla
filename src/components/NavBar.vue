@@ -30,9 +30,9 @@ import ModalComponet from './Modal.vue'
 import Avatar from './Avatar.vue';
 import logo1 from '../assets/logos/A.jpg'
 import logo2 from '../assets/logos/B.jpg'
-import logo3 from '../assets/logos/C.jpg'
+import logo3 from '../assets/logos/c.jpg'
 import logo4 from '../assets/logos/E.jpg'
-import logo5 from '../assets/logos/D.jpg'
+import logo5 from '../assets/logos/d.jpg'
 import LogoYalla from '../assets/logoYalla.png'
 import { ref } from 'vue'
 // all of these are automatically bound to the template
