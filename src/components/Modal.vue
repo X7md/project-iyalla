@@ -3,7 +3,7 @@
     <div v-if="dataShow" class="v-modal">
         <div class="container-fluid"><div class="row">
             <div class="col-12 name py-2">
-                <img class="avatar-img" src="http://localhost:3000/src/assets/logos/E.jpg">
+                <img class="avatar-img" :src="dataShow.img">
                     <div class="name m-auto px-2 d-inline-flex flex-column">
                         <p class="font-dubai-bold fs-5 v-info-title" v-text="dataShow.title"></p>
                     </div>
@@ -88,7 +88,8 @@ p.name {
     width: 90%;
     max-width: 390px;
     margin: auto;
-    height: 35vh;
+    min-height: 25%;
+    max-height: 220px;
     color: #000000;
     background-color: #ffffff;
     border-radius: 15px;
