@@ -2,8 +2,8 @@
     <div>
         <div>
             <div>
-            <div class="dropdown py-3 px-2">
-                <span>أكتشف المرح في </span>
+            <div class="dropdown py-3 px-5 fs-3">
+                <span class="text-black text-dark">أكتشف المرح في </span>
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     كل مكان
                 </button>

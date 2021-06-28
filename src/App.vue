@@ -4,6 +4,7 @@
 
 <script>
 import '../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css';
+import background from "./assets/kemo-sahab-4V0tz5FEvTc-unsplash.jpg?url"
 import HomePage from './components/home.vue';
 export default {
   components:{
@@ -27,12 +28,15 @@ export default {
 html, body, #app {
   min-height: 100vh;
 }
+:root {
+  --url: url("./assets/kemo-sahab-4V0tz5FEvTc-unsplash.jpg")
+}
 #app {
     font-family: Dubai-Bold;
     color: #ffffff;
     background-image: var(--url);
     background-size: cover;
-    background-position: center center;
+    background-position: center -15rem;
     background-repeat: no-repeat;
 }
 a {
