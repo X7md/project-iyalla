@@ -7,21 +7,17 @@
           منصتك للسياحة و الترفيه...
         </p>
       </div>
-    <BarSearch />
- <div>
- </div>
-  </div>
+      <div class="py-2"></div>
+<Grid/>
+</div>
 </template>
 
 <script setup>
 import Nav from './NavBar.vue'
-import BarSearch from './SearchBar.vue'
+import Grid from './GridView.vue'
 </script>
 
 <style scoped>
-  .hero {
-    min-height: 35vw
-  }
   .hero h1.title {
     font-size: xxx-large;
   }
