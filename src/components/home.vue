@@ -9,12 +9,14 @@
       </div>
       <div class="py-2"></div>
 <Grid/>
+<wh/>
 </div>
 </template>
 
 <script setup>
 import Nav from './NavBar.vue'
 import Grid from './GridView.vue'
+import Wh from "./WhatsApp.vue"
 </script>
 
 <style scoped>
