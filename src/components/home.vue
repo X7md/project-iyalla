@@ -8,6 +8,7 @@
         </p>
       </div>
       <div class="py-2"></div>
+<<<<<<< HEAD
   </div>
   <div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -17,11 +18,17 @@
   <div class="container-fluid grid-section py-2 bg-white">
     <Grid/>
   </div>
+=======
+<Grid/>
+<wh/>
+</div>
+>>>>>>> issue_
 </template>
 
 <script setup>
 import Nav from './NavBar.vue'
 import Grid from './GridView.vue'
+import Wh from "./WhatsApp.vue"
 </script>
 
 <style scoped>
