@@ -15,6 +15,7 @@
         position: fixed;
         color: #fff;
         bottom: 2.5rem;
+        right: 1.5rem;
         padding: .55rem;
         border-radius: 1.3rem;
         background: #51dc85;
